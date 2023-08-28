@@ -24,5 +24,48 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+// *******************Operations*************
+
+let value = 3
+let negValue = -value
+// console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3);
+
+let str1 = "Hy"
+let str2 = "Usama"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+
+// console.log(3 + 4 * 5 % 3); // not recommended in real life coding becuase of confusion that which calculation will apply first and which calculation will apply second and so on
+// console.log((3 + 4) * 5 % 3); // recommended
+
+// Below type of code not recommended
+// console.log(+true); // it will give the value of 1 in console
+// console.log(true+); // It will give error
+// console.log(+""); // It will give value of 0 is console
+
+// Below type of code not recommended
+let num1, num2, num3;
+num1 = num2 = num3 = 2+2;
+
+let gameCounter = 100;
+gameCounter++;  // in this case ++ is postfix
+console.log(gameCounter);
+++gameCounter;  // in this case ++ is prefix
+console.log(gameCounter);
+
