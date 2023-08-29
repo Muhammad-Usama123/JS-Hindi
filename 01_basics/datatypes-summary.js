@@ -37,3 +37,32 @@ console.log(typeof myFunction)
 
 //type of null => object
 //type of function => function object or object... all non primitives(array, function, object) types are objects
+
+
+// ++++++++++++++++++++++++++++++++++ Memory++++++++++++++++++++++
+
+// 2types: Stack(Primitive dataypes use stack memory), Heap (Non- primitive dataypes use heap memory)
+
+// stack memory means they give copy of value of variable from stack memory
+
+// heap memory means they give actual variable's value reference so whenever we change anything in that value it changes in real value
+
+let myName = "Usama"
+
+let anotherName = myName
+anotherName = "ABCD"
+
+console.log(anotherName);
+console.log(myName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo =userOne
+
+userTwo.email = "Usama@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
